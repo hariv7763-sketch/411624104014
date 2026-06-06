@@ -1,0 +1,58 @@
+body{
+    color:azure;
+    background-color: black;
+}
+
+img{
+    height: 500px;
+    width: 600px;
+    border-radius: 700px;
+}
+video{
+    height: 500px;
+}
+
+ol{
+    list-style-type: upper-roman;
+}
+
+ul{
+    list-style-type: disc;
+}
+h1{
+    padding: 50px;
+    border: 1px solid red;
+    margin: 50px;
+}
+
+button{
+    background-color: chartreuse;
+     padding: 10px;
+     margin: 20px;
+}
+button:hover{
+    background-color: brown;
+
+}
+table,th,td{
+    border: 1px solid yellow;
+    border-collapse: collapse;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+#p1{
+    font-style: italic;
+}
+#p2{
+    font-style: normal;
+}
+.group{
+    font-size: xx-large;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
