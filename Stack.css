@@ -4,12 +4,20 @@ body{
 }
 
 img{
-    height: 500px;
-    width: 600px;
-    border-radius: 700px;
+   height: 500px;
+        width: 500px;
+    }
+   /* border-radius: 700px;*/
+
+@media(max-width: 600px){
+    img{
+        height: auto;
+        width: 100%;
+    }
 }
 video{
-    height: 500px;
+   
+    width: 100%;
 }
 
 ol{
@@ -40,8 +48,15 @@ table,th,td{
 }
 nav{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+}
+@media (min-width:1024px) {
+  nav{
+    display: flex;
+    flex-direction:row ;
     gap: 50px;
+  }   
+
 }
 #p1{
     font-style: italic;
@@ -54,5 +69,13 @@ nav{
 }
 .grid{
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+   
+}
+@media (min-width:1024px) {
+    .grid{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+
+    }
+    
 }
