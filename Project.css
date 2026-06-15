@@ -1,0 +1,118 @@
+:root {
+    --bg-color:green;
+    --img-radius: 50px;
+}
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: darkslategray;
+    color: #334155;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+h1 {
+    margin: 10px 0;
+    color: #1e293b;
+}
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #ffffff;
+    padding: 15px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    box-sizing: border-box;
+}
+nav a {
+    text-decoration: none;
+    color: #475569;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+nav a:hover {
+    color: var(--bg-color);
+}
+img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: var(--img-radius);
+    object-fit: cover;
+}
+video {
+    width: 600px;
+    padding: 15px;
+    background-color: var(--bg-color);
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 500px;
+    margin: 10px 0;
+    background:burlywood;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+th,
+td {
+    border:  var(--bg-color);
+    padding: 12px;
+    text-align: left;
+}
+th {
+    background-color:grey;
+    color: #1e293b;
+    font-weight: bold;
+}
+button {
+
+    border: black;
+    padding: 12px 24px;
+    margin: 20px;
+    background-color:green;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: opacity 0.2s, transform 0.1s;
+}
+button:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+}
+.grid-container {
+    display: grid;
+    width: 100%;
+    max-width: 1000px;
+    gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+}
+.grid-item {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+@media (min-width: 768px) {
+    nav {
+        flex-direction: row;
+        justify-content: center;
+           gap: 40px;
+    }
+    .grid-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
